@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+
+<!-- Classic Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background-color:#0f0f0f;
+    color:#e5e5e5;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    border-bottom:1px solid #333;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:900;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+    color:#b3b3b3;
+}
+
+nav{
+    margin-top:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#e5e5e5;
+    margin:0 20px;
+    font-weight:700;
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c9a227;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:60px 0;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+h2{
+    font-size:2rem;
+    font-weight:900;
+    margin-bottom:30px;
+    border-left:4px solid #c9a227;
+    padding-left:15px;
+}
+
+.about p{
+    max-width:700px;
+    font-size:1.1rem;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:30px;
+    border:1px solid #333;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#c9a227;
+}
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.contact form{
+    max-width:600px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    background:#1a1a1a;
+    border:1px solid #333;
+    color:#e5e5e5;
+    font-family:'Playfair Display', serif;
+}
+
+.contact button{
+    padding:15px 40px;
+    border:none;
+    background:#c9a227;
+    color:#000;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:#e6b800;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #333;
+    font-size:0.9rem;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Creative Thinker</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate developer focused on building elegant, modern, and
+            high-performance web experiences. My work blends creativity with
+            clean structure and timeless design principles.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Selected Work</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>Brief description of your project and its impact.</p>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Brief description of your project and its impact.</p>
+            </div>
+            <div class="card">
+                <h3>Project Three</h3>
+                <p>Brief description of your project and its impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
